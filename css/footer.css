@@ -1,0 +1,154 @@
+footer{
+  background-color: #222;
+  color: #777;
+}
+footer a{
+  color: #fff;
+}
+footer .wrap{ 
+  width: 1200px;
+}
+div.up{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #444;
+  padding-bottom: 50px;
+}
+div.up ul.left{
+
+}
+div.up ul.left li{
+  
+}
+div.up ul.left li a{
+  line-height: 2;
+  font-size: 25px;
+  font-weight: 700;
+}
+div.up ul.left li a:hover{
+  text-decoration: underline;
+}
+div.up ul.right{
+
+  line-height: 2;
+}
+div.up ul.right li{
+
+  padding: 0px 0 20px 0;
+}
+div.up ul.right li h2{
+  color: #fff;
+  font-weight: 600;
+}
+div.up ul.right li p{
+
+}
+div.up ul.right li p span{
+  
+  padding-left: 10px;
+}
+ul.fnb{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  width: 65%;
+}
+ul.fnb li{
+
+}
+ul.fnb li:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+ul.fnb li a{
+
+  font-size: 14px;
+  font-weight: 700;
+}
+ul.fnb li:nth-child(2) a{
+  color: #f5ce3e;
+}
+address{
+  padding: 30px 0 0 0;
+  line-height: 2;
+  font-size: 14px;
+}
+address span::after{
+  content: "";
+  width: 1px;
+  height: 10px;
+  display: inline-block;
+  background-color: #777;
+  margin: 0px 15px 0 15px;
+}
+address+p.p{
+  line-height: 2;
+}
+ul.sns{
+  float: right;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+ul.sns li{
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+ul.sns li:hover{
+  border-color: #fff;
+}
+ul.sns li a{ 
+  font-size: 30px;
+  color: #999;
+  font-size: 0;
+  display: block;
+  padding: 10px;
+}
+ul.sns li a i{
+  color: #999;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+ul.sns li:hover a i{
+  color: #fff;
+}
+a.top{
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #0000003d;
+  font-size: 0;
+  transform: translateY(200%);
+  transition: all 0.5s; 
+}
+a.top.show{
+  transform: initial;
+}
+a.top::before{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-right: none;
+  border-bottom: none;
+  transform: rotate(45deg) translateX(29px);
+}
+a.top::after{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 25px;
+  background-color: #fff;
+  transform: translateX(28px) translateY(2px);
+}

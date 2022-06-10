@@ -1,0 +1,107 @@
+#title {
+  height: 100%;
+}
+#title .wrap { 
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#title ul.slide{
+  height: 100%;
+  width: 100%;
+}
+.slick-slider .slick-track, .slick-slider .slick-list{
+  height: 100%;
+}
+#title ul.slide li{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+}
+#title ul.slide .t1{ 
+  background-image: url(../img/title1.jpg);
+}
+#title ul.slide .t2{  
+  background-image: url(../img/title2.jpg);
+}
+#title span.control{
+  width: 240px;
+  height: 56px;
+  display: block;
+  background-color: #0000008a;
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 120px);
+  border-radius: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#title .slick-prev, 
+#title .slick-next{
+  width: 43px;
+  height: 30px;
+  display: block;
+  background-color: #fff0;
+  top: 91%;
+}
+#title .slick-prev{
+  left: 44%;
+  z-index: 1;
+}
+#title ul .slick-prev{
+  display: none;
+}
+#title ul .slick-next{
+  display: none;
+}
+#title .slick-prev::before{
+  content: "";
+  width: 2px;
+  height: 8px;
+  display: block;
+  background-color: #fff; 
+  transform: translateX(10px) translateY(1px) rotate(45deg);
+  transform-origin: 50% 43%;
+  transition: all 0.5s;
+  opacity: 1;
+}
+#title .slick-prev::after{
+  content: "";
+  width: 30px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  transform: translateX(7px) translateY(-1px);
+  transition: all 0.5s;
+}
+#title .slick-next{
+  right: 44%;
+  z-index: 1;
+}
+#title .slick-next::before{
+  content: "";
+  width: 30px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  transform: translateX(7px) translateY(7px);
+  transition: all 0.5s;
+  opacity: 1;
+}
+#title .slick-next::after{
+  content: "";
+  width: 2px;
+  height: 8px;
+  display: block;
+  background-color: #fff;
+  transform: translateX(32px) translateY(-1px) rotate(-45deg);
+  transform-origin: 43% 50%;  
+  transition: all 0.5s;
+}
